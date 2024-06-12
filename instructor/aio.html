@@ -985,7 +985,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-08-open-collaboration"><p>Content from <a href="08-open-collaboration.html">Open project collaboration &amp; management</a></p>
 <hr>
-<p>Last updated on 2024-06-10 |
+<p>Last updated on 2024-06-12 |
         
         <a href="https://github.com/softwaresaved/fair-research-software/edit/main/episodes/08-open-collaboration.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <p>Estimated time: <i aria-hidden="true" data-feather="clock"></i> 90 minutes</p>
@@ -1363,7 +1363,7 @@ to help you)</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
 <div class="accordion-body">
 <p>A: The LGPL license could be a good choice for library code. It can
 be linked to software that isn’t GPL licensed but any modifications to
@@ -1468,39 +1468,67 @@ listed.</p>
 <div class="section level2">
 <h2 id="relicensing">Relicensing<a class="anchor" aria-label="anchor" href="#relicensing"></a>
 </h2>
-<p>meaning Release somebody else’s code under a license of your
-choice</p>
 <div class="section level3">
 <h3 id="license-compatibility">License Compatibility<a class="anchor" aria-label="anchor" href="#license-compatibility"></a>
 </h3>
-<p>Generally you can relicense code under more permissive licenses to
-less permissive ones. For example MIT to GPL. This is because nothing in
-the GPL contradicts anything in the MIT license, but you’ll have to
-display both licenses.</p>
-<p>Creative commons zero or public domain can be relicensed to any open
-source license.</p>
+<p>Generally you can relicense someone else’s code under more permissive
+licenses to less permissive ones without their permission. For example
+you could relicense code from the MIT license to the GPL. This is
+because nothing in the GPL contradicts anything in the MIT license, but
+you’ll still have to display the MIT license for the original code and
+the GPL for your modifications.</p>
+<p>This doesn’t work the other way though, you can’t take code released
+under GPL and relicense it as MIT since MIT is a more liberal license
+that doesn’t match the terms of the GPL.</p>
+<p>Creative commons zero or public domain code can usually be relicensed
+to any open source license (or a commercial license for that
+matter).</p>
 <p>Sometimes there are contradictory statements in licenses which
 prevent relicensing. For example Apache 2 has some provisions about
 software patents, you won’t be able to relicense Apache 2 code under MIT
 since it doesn’t have an equivalent patent clause.</p>
-<p><a href="https://www.gnu.org/licenses/license-list.en.html" class="external-link uri">https://www.gnu.org/licenses/license-list.en.html</a></p>
+<p>The GNU project has a <a href="useful%20guide">https://www.gnu.org/licenses/license-list.en.html</a>
+to license compatibility on their website.</p>
 </div>
 <div class="section level3">
 <h3 id="getting-agreement-to-relicense">Getting agreement to relicense<a class="anchor" aria-label="anchor" href="#getting-agreement-to-relicense"></a>
 </h3>
-<p>all the developers can agree to change the license of a product for
-future versions</p>
-<p>some projects require contributor license agreements</p>
+<p>Sometimes the developers of a program will wish to change the license
+it is distributed under. In order to do this they’ll need the agreement
+of all the copyright holders of the program and typically this will mean
+everyone who contributed code to it. This is fine if you only have a
+handful of contributors to your project, but gets harder when the
+project starts to grow bigger.</p>
+<p>Some projects work around this by having contributors agree to a
+“contributor license agreement”. This will set out the terms under which
+the code is contributed to the project. It might include a copyright
+assignment or just granting certain rights to the project. This usually
+allows the company (or non-profit foundation as many open source
+projects are based on non-profit foundations) running the project to
+relicense the code in future and to take legal action against people who
+violate the license.</p>
 </div>
+<div class="section level3">
+<h3 id="going-commercial">Going commercial<a class="anchor" aria-label="anchor" href="#going-commercial"></a>
+</h3>
+<p>It is possible to sell software that is licensed under an open source
+license commercially, you will need to supply the source code along with
+the binaries. However, under any license meeting the Open Source
+Definition or the Four Freedoms the person receiving the software can
+make copies and give (or sell) them to anybody else.</p>
+<p>It is also possible to release software under a two licenses, one
+open source and one commercial. This has been done by a few open source
+projects who wish to sell the software to some customers (sometimes with
+extra custom modifications) and give it to others.</p>
 </div>
-<div class="section level2">
-<h2 id="going-commercial">Going commercial<a class="anchor" aria-label="anchor" href="#going-commercial"></a>
-</h2>
-<ul>
-<li>Dual licensing</li>
-<li>Contributor license agreements</li>
-<li>Don’t try to write your own</li>
-</ul>
+<div class="section level3">
+<h3 id="dont-write-your-own-license">Don’t write your own license<a class="anchor" aria-label="anchor" href="#dont-write-your-own-license"></a>
+</h3>
+<p>Unless you are a lawyer specialising in software license don’t try to
+write your own license! A lot of lawyers with expertise in software
+licenses have spent a lot of time writing open source licenses, use one
+of the existing licenses that is well known and perhaps even tested in
+court.</p>
 <div id="relicensing-exercise" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -1509,7 +1537,9 @@ future versions</p>
 <h3 class="callout-title">Relicensing exercise<a class="anchor" aria-label="anchor" href="#relicensing-exercise"></a>
 </h3>
 <div class="callout-content">
-<p>Q: somebody has code under license X, can they relicense under Y?</p>
+<p>Q: Find the webpage of a major open source project that is relevant
+to your research. See if you can find a contributor license agreement.
+Add a link to this in the chat/etherpad/hackmd.</p>
 </div>
 </div>
 </div>
@@ -1518,9 +1548,12 @@ future versions</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
-<p>A:</p>
+<p>A: Python - <a href="https://www.python.org/psf/contrib/" class="external-link uri">https://www.python.org/psf/contrib/</a></p>
+<p>Scipy - <a href="https://github.com/scipy/scipy/blob/main/CONTRIBUTING.rst" class="external-link uri">https://github.com/scipy/scipy/blob/main/CONTRIBUTING.rst</a></p>
+<p>Matplotlib - <a href="https://matplotlib.org/stable/project/license.html" class="external-link uri">https://matplotlib.org/stable/project/license.html</a></p>
+</div>
 </div>
 </div>
 </div>
@@ -1949,7 +1982,7 @@ it.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3">Show me the solution</h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
 <div class="accordion-body">
 <p>A:</p>
 </div>
@@ -2108,8 +2141,8 @@ any links that you are not going to use.
   "url": "https://softwaresaved.github.io/fair-research-software/instructor/aio.html",
   "identifier": "https://softwaresaved.github.io/fair-research-software/instructor/aio.html",
   "dateCreated": "2023-10-03",
-  "dateModified": "2024-06-11",
-  "datePublished": "2024-06-11"
+  "dateModified": "2024-06-12",
+  "datePublished": "2024-06-12"
 }
 
   </script><script>
