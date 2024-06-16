@@ -660,7 +660,7 @@ website to help you)</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution1" aria-expanded="false" aria-controls="collapseSolution1">
   <h4 class="accordion-header" id="headingSolution1">Show me the solution</h4>
 </button>
-<div id="collapseSolution1" class="accordion-collapse collapse" data-bs-parent="#accordionSolution1" aria-labelledby="headingSolution1">
+<div id="collapseSolution1" class="accordion-collapse collapse" aria-labelledby="headingSolution1" data-bs-parent="#accordionSolution1">
 <div class="accordion-body">
 <p>A: The LGPL license could be a good choice for library code. It can
 be linked to software that isn’t GPL licensed but any modifications to
@@ -823,7 +823,7 @@ Add a link to this in the chat/etherpad/hackmd.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution2" aria-expanded="false" aria-controls="collapseSolution2">
   <h4 class="accordion-header" id="headingSolution2">Show me the solution</h4>
 </button>
-<div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
+<div id="collapseSolution2" class="accordion-collapse collapse" aria-labelledby="headingSolution2" data-bs-parent="#accordionSolution2">
 <div class="accordion-body">
 <p>A: Here are a few examples:</p>
 <p>Python - <a href="https://www.python.org/psf/contrib/" class="external-link uri">https://www.python.org/psf/contrib/</a></p>
@@ -1151,7 +1151,9 @@ example:</p>
 </div>
 <p>To create a branch and change to it in a single command we can use
 <code>git switch</code> with the <code>-c</code> option (or
-<code>git checkout</code> with the <code>-b</code> option).</p>
+<code>git checkout</code> with the <code>-b</code> option,
+<code>git switch</code> is only found in more recent versions of
+Git).</p>
 <div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -1164,7 +1166,7 @@ example:</p>
 will go to that branch. When we run a <code>git commit</code> command
 we’ll see the name of the branch we’re committing to in the output of
 <code>git commit</code>. Let’s edit our code and fix the lack of default
-values bug that we entere into the issue tracker earlier on.</p>
+values bug that we entered into the issue tracker earlier on.</p>
 <p>Change your code from</p>
 <div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
@@ -1192,7 +1194,8 @@ to.</p>
 <pre class="output" tabindex="0"><code>[01-missing-values-bug 330a2b1] fixes missing values bug, closes #01 </code></pre>
 </div>
 <p>If we now switch back to the <code>main</code> branch our new commit
-will no longer be there in the source file.</p>
+will no longer be there in the source file or the output of
+<code>git log</code>.</p>
 <div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -1259,14 +1262,14 @@ requests that another merge code from a branch (or “pull” it from
 another copy of the repository). The person recveing the request then
 has the chance to review the code, write comments suggesting changes or
 even change the code themselves before merging it. It is also very
-common for automated checks of code to be run at a pull request to
+common for automated checks of code to be run on a pull request to
 ensure the code is of good quality and is passing automated tests.</p>
 <p>As a simple example of a pull request we can now create a pull
-request for the changes we made on the bugfix branch and pushed to
-Github earlier on. The Github webpage for our repository will now be
-saying something like “bugfix had recent pushes n minutes ago - Compare
-&amp; Pull request”. Click on this button and create a new pull
-request.</p>
+request for the changes we made on our
+<code>01-missing-values-bug</code> branch and pushed to Github earlier
+on. The Github webpage for our repository will now be saying something
+like “bugfix had recent pushes n minutes ago - Compare &amp; Pull
+request”. Click on this button and create a new pull request.</p>
 <p>Give the pull request a title and write a brief description of it,
 then click the green “Create pull request” button. Github will then
 check if we can merge this pull request without any problems. We’ll look
@@ -1294,7 +1297,7 @@ stick with the default merge commit.</p>
 <p>Go ahead and click on “Merge pull request”, then “Confirm merge”. The
 changes will now be merged together. Github gives us the option to
 delete the branch we were working on, since it’s history is preserved in
-the main branch there isn’t any reason to keep it in this case.</p>
+the main branch there isn’t any reason to keep it.</p>
 <div class="section level3">
 <h3 id="using-forks-instead-of-branches">Using Forks Instead of Branches<a class="anchor" aria-label="anchor" href="#using-forks-instead-of-branches"></a></h3>
 <p>A fork is similar to a branch, but instead of it being part of the
@@ -1340,7 +1343,7 @@ it.</p>
 <button class="accordion-button solution-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSolution3" aria-expanded="false" aria-controls="collapseSolution3">
   <h4 class="accordion-header" id="headingSolution3">Show me the solution</h4>
 </button>
-<div id="collapseSolution3" class="accordion-collapse collapse" data-bs-parent="#accordionSolution3" aria-labelledby="headingSolution3">
+<div id="collapseSolution3" class="accordion-collapse collapse" aria-labelledby="headingSolution3" data-bs-parent="#accordionSolution3">
 <div class="accordion-body">
 <p>A:</p>
 </div>
@@ -1366,10 +1369,8 @@ and <a href="https://carpentries.github.io/github-skill-up-maintainers/" class="
 <h2 id="further-reading">Further reading<a class="anchor" aria-label="anchor" href="#further-reading"></a></h2>
 <p>We recommend the following resources for some additional reading on
 the topic of this episode:</p>
-<ul><li>Open source definition - <a href="https://opensource.org/osd/" class="external-link uri">https://opensource.org/osd/</a>
-</li>
-<li>What is free software - <a href="https://www.gnu.org/philosophy/free-sw.en.html" class="external-link uri">https://www.gnu.org/philosophy/free-sw.en.html</a>
-</li>
+<ul><li><a href="Open%20source%20definition">https://opensource.org/osd/</a></li>
+<li><a href="GNU%20Project%20-%20What%20is%20free%20software?">https://www.gnu.org/philosophy/free-sw.en.html</a></li>
 </ul><div id="keypoints1" class="callout keypoints">
 <div class="callout-square">
 <i class="callout-icon" data-feather="key"></i>
@@ -1380,13 +1381,33 @@ the topic of this episode:</p>
 <div class="callout-content">
 <ul><li>Open source applies Copyright licenses permitting others to reuse
 and adapt your code or data.</li>
-<li>Permissive licenses</li>
-<li>Copyleft licenses</li>
-<li>Creative commons</li>
-<li>Open source software can be sold</li>
-<li>Add license file to your repo, add a license to each file in case it
-gets detached</li>
-<li>Unless you are a lawyer don’t try to create your own license.</li>
+<li>Permissive licenses allow code to be used in other products
+providing the copyright statement is displayed.</li>
+<li>Copyleft licenses require the source code of any modifications to be
+released under a copyleft license.</li>
+<li>Creative commons licenses are suitable for non-code files such as
+documentation and images.</li>
+<li>Open source software can be sold, but you must supply the source
+code and the people you sell it to can give it away to somebody
+else.</li>
+<li>Add license file to your repository and add a license to each file
+in case it gets detached.</li>
+<li>Zenodo can be used to archive a Github repository and obtain a DOI
+for it.</li>
+<li>We can include a CITATION file to tell people how to cite our
+code.</li>
+<li>Github can track bugs or issues with a program.</li>
+<li>Git branches can be used to allow multiple developers to work on the
+same part of a program in parallel.</li>
+<li>The <code>git branch</code> command shows the list of branches and
+can create new branches.</li>
+<li>The <code>git switch</code> command changes which branch we are
+working on.</li>
+<li>The <code>git merge</code> command merges another branch into the
+current one.</li>
+<li>Pull requests allow developers to work on their own branch/fork and
+then request other developers review their changes before they are
+merged.</li>
 </ul></div>
 </div>
 </div>
