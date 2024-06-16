@@ -975,7 +975,7 @@ any links that you are not going to use.
  -->
 </section></section><section id="aio-08-open-collaboration"><p>Content from <a href="08-open-collaboration.html">Open project collaboration &amp; management</a></p>
 <hr>
-<p>Last updated on 2024-06-12 |
+<p>Last updated on 2024-06-16 |
         
         <a href="https://github.com/softwaresaved/fair-research-software/edit/main/episodes/08-open-collaboration.md" class="external-link">Edit this page <i aria-hidden="true" data-feather="edit"></i></a></p>
 <div class="text-end">
@@ -1054,11 +1054,12 @@ registration or license agreement.</p>
 <h3 id="copyright-and-open-source">Copyright and Open Source<a class="anchor" aria-label="anchor" href="#copyright-and-open-source"></a>
 </h3>
 <p>An Open Source license is a form of copyright license that gives
-anybody who receives a copy of a work to make additional copies and
-distribute them to anybody they like. It also allows anybody who
+anybody who receives a copy of a work the right to make additional
+copies and distribute them to anybody else. It also allows anybody who
 receives a copy to make changes to the original work and to redistribute
-those. When applied to software this requires that the source code of
-the program is distributed alongside the executable program.</p>
+those. When applied to software this usually requires that anybody
+supplying the executable binary of a program must also supply the source
+code if requested.</p>
 </div>
 <div class="section level3">
 <h3 id="copyright-statements">Copyright Statements<a class="anchor" aria-label="anchor" href="#copyright-statements"></a>
@@ -1109,18 +1110,19 @@ Software” often being given away for no charge (or just a small
 charge/suggested donation to cover media or distribution costs), nothing
 in the four freedoms and the software licenses that were designed around
 it prohibits charging for software.</p>
-<p>In 1998 the Open Source Defintion was created in 1998 and says that
-software which is open source must be distributed under the a license
-which allows the following:</p>
+<p>In 1998 the Open Source Defintion was created and says that software
+which is open source must be distributed under the a license which
+allows the following:</p>
 <ol style="list-style-type: decimal">
 <li>Free Redistribution must be allowed</li>
 <li>Source Code must be included</li>
 <li>Derived Works must be allowed</li>
-<li>Integrity of The Author’s Source Code - Restrict distribution of
-modifications if patches can be distributed instead. Must explicitly
-permit distribution of software built from modified source code. The
-license may require derived works to carry a different name or version
-number from the original software.</li>
+<li>Integrity of The Author’s Source Code - There can only be
+restrictions on the distribution of modifications if patches can be
+distributed instead. Must explicitly permit distribution of software
+built from modified source code. The license may require derived works
+to carry a different name or version number from the original
+software.</li>
 <li>No Discrimination Against Persons or Groups</li>
 <li>No Discrimination Against Fields of Endeavor</li>
 <li>Distribution of License - License applies to anyone the software is
@@ -1167,7 +1169,7 @@ domain simply with a declaration within the work. In the USA works
 produced by the federal government are automatically public domain. But
 in other countries works need to be registered as public domain. For
 this reason it isn’t recommended to simply make work public domain if
-you want to release it for anybody in the world to freely use.</p>
+you want to release it for use across the world.</p>
 <p>If you really want to release code under something very similar to
 public domain then the <a href="https://unlicense.org/" class="external-link">unlicense</a>
 could be for you. It states that anybody is free to use the software in
@@ -1191,12 +1193,16 @@ redistribute the source code with their closed source program.</p>
 <h4 id="mit-license">MIT License<a class="anchor" aria-label="anchor" href="#mit-license"></a>
 </h4>
 <p>The MIT License is very simple and a very popular choice of license,
-it is only three paragraphs long. It states that: * Anybody receiving
-the software can copy, modify, merge, publish, distribute, sublicense,
-and/or sell copies of the software to anybody they like. * That they
-must include the license text and copyright statement when they
-redistribute it. * That there’s no warranty included and you can’t hold
-the authors liable for any problems or damages that might arise.</p>
+it is only three paragraphs long. It states that:</p>
+<ul>
+<li>Anybody receiving the software can copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the software to anybody
+they like.</li>
+<li>That they must include the license text and copyright statement when
+they redistribute it.</li>
+<li>That there’s no warranty included and you can’t hold the authors
+liable for any problems or damages that might arise.</li>
+</ul>
 </div>
 <div class="section level4">
 <h4 id="bsd">BSD<a class="anchor" aria-label="anchor" href="#bsd"></a>
@@ -1212,15 +1218,17 @@ text in their documentation.</li>
 include a statement saying that it includes software written by the
 author.</li>
 <li>That the author doesn’t endorse any derived products.</li>
-<li>That the author doesn’t provide a warranty.</li>
+<li>That the author doesn’t provide a warranty. (this is written in a
+separate section and isn’t one of the 4 clauses)</li>
 </ul>
-<p>The acknowledgement clause caused some controversey and some people
-thought that it didn’t meet the open source definition or comply with
-the four freedoms. To address this a new version of the license known as
-the 3 clause BSD license was created. This removed the acknowledgement
-clause. An even simpler 2 clause version was launched that simply
-required the copyright notices to be included in both source and binary
-forms and still included the text about there being no warranty.</p>
+<p>The acknowledgement/advertising clause caused some controversey and
+some people thought that it didn’t meet the open source definition or
+comply with the four freedoms. It also became impractical and lead to
+very long statements where there were multiple authors of large pieces
+of software.</p>
+<p>To address this a new version of the license known as the 3 clause
+BSD license was created. This removed the acknowledgement clause. An
+even simpler 2 clause version removes the endorsement clause.</p>
 </div>
 <div class="section level4">
 <h4 id="apache-2-0">Apache 2.0<a class="anchor" aria-label="anchor" href="#apache-2-0"></a>
@@ -1256,8 +1264,7 @@ community which created it.</p>
 or GPL. There are several versions of the GPL available, the oldest GPL
 version 1.0, but this version was quickly replaced with version 2.0 and
 was rarely used. Version 2 is much more common and is used by a lot of
-popular software including the Linux Kernel and much of the GNU
-operating system that is key to many Linux systems. Compared with the
+popular software including the Linux Kernel. Compared with the
 permissive license the GPL is quite a long license agreement and many of
 its clauses can be quite difficult for non-lawyers to fully
 understand.</p>
@@ -1269,8 +1276,9 @@ understand.</p>
 software under the license and to require that people distributing GPL
 code on embedded systems must also give users the ability to rebuild
 that software and use it in their device. It is an even longer document
-than GPL version 2 and has proved controversial with some and hasn’t
-been as widely adopted as version 2.</p>
+than GPL version 2 and has proved controversial with some and despite
+coming out in 2007 hasn’t been adopted by many projects which used GPL
+version 2.</p>
 </div>
 <div class="section level4">
 <h4 id="lgpl">LGPL<a class="anchor" aria-label="anchor" href="#lgpl"></a>
@@ -1325,9 +1333,9 @@ misunderstanding.</p>
 <div class="section level4">
 <h4 id="tools-to-help-you-choose">Tools to help you choose<a class="anchor" aria-label="anchor" href="#tools-to-help-you-choose"></a>
 </h4>
-<p>The website <a href="choosealicense.com">choosealicense.com</a> has
-some great resources to help you choose a license that’s appropriate for
-your needs.</p>
+<p>The website <a href="https://choosealicense.com" class="external-link">choosealicense.com</a> has some great
+resources to help you choose a license that’s appropriate for your
+needs.</p>
 <div id="license-selection-exercise" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -1342,8 +1350,8 @@ research community and ensure that the code remains as open as possible
 to benefit the community. But you would also like to see it being
 integrated into as many different research codes and even commercial
 products as possible. What would be a good choice of license? (hint: You
-can use the <a href="choosealicense.com">choosealicense.com</a> website
-to help you)</p>
+can use the <a href="https://choosealicense.com" class="external-link">choosealicense.com</a>
+website to help you)</p>
 </div>
 </div>
 </div>
@@ -1509,15 +1517,6 @@ make copies and give (or sell) them to anybody else.</p>
 open source and one commercial. This has been done by a few open source
 projects who wish to sell the software to some customers (sometimes with
 extra custom modifications) and give it to others.</p>
-</div>
-<div class="section level3">
-<h3 id="dont-write-your-own-license">Don’t write your own license<a class="anchor" aria-label="anchor" href="#dont-write-your-own-license"></a>
-</h3>
-<p>Unless you are a lawyer specialising in software license don’t try to
-write your own license! A lot of lawyers with expertise in software
-licenses have spent a lot of time writing open source licenses, use one
-of the existing licenses that is well known and perhaps even tested in
-court.</p>
 <div id="relicensing-exercise" class="callout challenge">
 <div class="callout-square">
 <i class="callout-icon" data-feather="zap"></i>
@@ -1539,7 +1538,8 @@ Add a link to this in the chat/etherpad/hackmd.</p>
 </button>
 <div id="collapseSolution2" class="accordion-collapse collapse" data-bs-parent="#accordionSolution2" aria-labelledby="headingSolution2">
 <div class="accordion-body">
-<p>A: Python - <a href="https://www.python.org/psf/contrib/" class="external-link uri">https://www.python.org/psf/contrib/</a></p>
+<p>A: Here are a few examples:</p>
+<p>Python - <a href="https://www.python.org/psf/contrib/" class="external-link uri">https://www.python.org/psf/contrib/</a></p>
 <p>Scipy - <a href="https://github.com/scipy/scipy/blob/main/CONTRIBUTING.rst" class="external-link uri">https://github.com/scipy/scipy/blob/main/CONTRIBUTING.rst</a></p>
 <p>Matplotlib - <a href="https://matplotlib.org/stable/project/license.html" class="external-link uri">https://matplotlib.org/stable/project/license.html</a></p>
 </div>
@@ -1564,7 +1564,8 @@ important steps to consider before sharing it publicly.</p>
 creator can see them. If we’re going to be adding an open source license
 to our repository we probably want to make sure people can actually
 access it too!</p>
-<p>Go to the Github webpage of your repository (<a href="https://github.com/" class="external-link uri">https://github.com/</a><yourusername>/<yourrepsoitoryname>)
+<p>Go to the Github webpage of your repository
+(<code>https://github.com/&lt;yourusername&gt;/&lt;yourrepsoitoryname&gt;</code>)
 and click on the Settings link near the top right corner. Then scroll
 down to the bottom of the page and the “Danger Zone” settings. Click on
 “Change Visibility” and you should see a message saying “Change to
@@ -1572,7 +1573,7 @@ public”, if it says “Change to private” then the repository is already
 public. You’ll then be asked to confirm that you want to make the
 repository public and agree to the warning that the code will now be
 publicly visible. As a security measure you’ll then have to put in your
-Github password.</yourrepsoitoryname></yourusername></p>
+Github password.</p>
 </div>
 <div class="section level3">
 <h3 id="transferring-to-an-organisation">Transferring to an organisation<a class="anchor" aria-label="anchor" href="#transferring-to-an-organisation"></a>
@@ -1594,21 +1595,105 @@ to.</p>
 <p>Zenodo is a data archive run by CERN. Anybody can upload datasets up
 to 50GB to it and receive a Digital Object Identifier (DOI). Zenodo’s
 definition of a dataset is quite broad and can include code. This gives
-us a way to obtain a DOI for our code.</p>
+us a way to obtain a DOI for our code. We can archive our Github
+repository to Zenodo by doing the following:</p>
+<ol style="list-style-type: decimal">
+<li>Go to the <a href="https://zenodo.org/login" class="external-link">Zenodo Login page</a>
+and choose to login with Github.</li>
+<li>Authorise Zenodo to connect to Github.</li>
+<li>Go to the <a href="https://zenodo.org/account/settings/github/" class="external-link">Github page</a> in
+your Zenodo account. This can be found in the pull down menu with your
+user name in the top right corner of the screen.</li>
+<li>You’ll now have a list of all of your Github repositories. Next to
+each will be an “On” button. If you have created a new repository you
+might need to press the “Sync” button to update the list of repositories
+Zenodo knows about.</li>
+<li>Press the “On” button for the repository you want to archive. If
+this was successful you’ll be told to refresh the page.</li>
+<li>The repository should now appear in the list of Enabled repositories
+at the top of the screen. But it doesn’t yet have a DOI. To get one we
+have to make a release on Github. Click on the repository and then press
+the green button to create a release. This will take you to Github’s
+release page where you’ll be asked to give a title and description of
+the release. You will also have to create a tag, this is a way of having
+a friendly name for the version of some code in Git instead of using a
+long hash code. Often we’ll create a sequential version number for each
+release of the software and have the tag name match this, for example
+v1.0 or just 1.0.</li>
+<li>If we now refresh the Zenodo page for this repository we will see
+that it has been assigned a DOI.</li>
+</ol>
+<p>The DOI doesn’t just link to Github, Zenodo will have taken a copy of
+our repository at the point where we tagged the release. This means that
+even if we delete it from Github or even if Github were ever to go away
+or remove it, they’ll still be a copy on Zenodo. Zenodo will allow
+people to download the entire repository as a single Zip file.</p>
+<p>Zenodo will have actually created two DOIs for you. One represents
+the latest version of the software and will always represent the latest
+if you make more releases. The other is specfic to the release you made
+and will always point to that version. We can see both of these by
+clicking on the DOI link in the Zenodo page for the repository. One of
+the things which is displayed on this page is a badge image that you can
+copy the link for and add to the README file in your Git repository so
+that people can find the Zenodo version of the repository. If you click
+on the DOI image in the Details section of the Zenodo page then you will
+be shown instructions for obtaining a link to the DOI badge in various
+formats including Markdown. Here is the badge for this repository:</p>
+<p><a href="https://doi.org/10.5281/zenodo.11869450" class="external-link"><img src="https://zenodo.org/badge/DOI/10.5281/zenodo.11869450.svg" alt="DOI" class="figure"></a></p>
+<div id="archive-your-repository-to-zenodo" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="archive-your-repository-to-zenodo" class="callout-inner">
+<h3 class="callout-title">Archive your repository to Zenodo<a class="anchor" aria-label="anchor" href="#archive-your-repository-to-zenodo"></a>
+</h3>
+<div class="callout-content">
+<ul>
+<li>Create an account on Zenodo that is linked to your Github
+account.</li>
+<li>Use Zenodo to create a release for your repository and obtain a DOI
+for it.</li>
+<li>Get the link to the DOI badge for your repository and add a link to
+this image to your README file in markdown format. Check that this is
+the DOI for the latest version and not the DOI for a specific version,
+if not you’ll be updating this every time you make a release.</li>
+</ul>
+</div>
+</div>
+</div>
+<div id="problems-with-github-and-zenodo-integration" class="callout">
+<div class="callout-square">
+<i class="callout-icon" data-feather="bell"></i>
+</div>
+<div id="problems-with-github-and-zenodo-integration" class="callout-inner">
+<h3 class="callout-title">Problems with Github and Zenodo
+integration<a class="anchor" aria-label="anchor" href="#problems-with-github-and-zenodo-integration"></a>
+</h3>
+<div class="callout-content">
+<p>The integration between Github and Zenodo does not interact well with
+some browser privacy features and extensions. Firefox can be
+particularly problematic with this and might open new tabs to login to
+Github and then give an error saying:
+<code>Your browser did something unexpected. Please try again. If the error continues, try disabling all browser extensions.</code>
+If this happens try disabling the extra privacy features/extensions or
+using another browser such as Chrome.</p>
+</div>
+</div>
+</div>
 </div>
 <div class="section level3">
 <h3 id="adding-a-citation-file">Adding a citation file<a class="anchor" aria-label="anchor" href="#adding-a-citation-file"></a>
 </h3>
 <p>Now that we have our DOI it is good practice to include a citation
 file in our Git repository to tell other people how to cite it. There
-are a few common formats used for this, we will use the <a href="Citation%20File%20Format">https://citation-file-format.github.io/</a>
+are a few common formats used for this, we will use the <a href="https://citation-file-format.github.io/" class="external-link">Citation File Format</a>
 (CFF).</p>
 <p>Below is an example citation file, this will typically be called
-CITATION.cff. It is written in a YAML format with single line
-identifiers being followed by a : and multiline options being indented
-by two spaces and starting with a - symbol on the first line. If there
-need to be multiple instances of a multiline option (such as author)
-then each one will start with a new - symbol.</p>
+<code>CITATION.cff</code>. It is written in a YAML format with single
+line identifiers being followed by a : and multiline options being
+indented by two spaces and starting with a - symbol on the first line.
+If there need to be multiple instances of a multiline option (such as
+author) then each one will start with a new - symbol.</p>
 <div class="codewrapper sourceCode" id="cb1">
 <h3 class="code-label">YAML<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -1630,6 +1715,20 @@ can be to use the <a href="cff-initalizer">https://citation-file-format.github.i
 tool which will ask us a series of questions and then create a file for
 us to download and include. We can also use this tool to validate an
 existing file is correctly formatted.</p>
+<div id="add-a-citation-file-to-your-repository" class="callout discussion">
+<div class="callout-square">
+<i class="callout-icon" data-feather="message-circle"></i>
+</div>
+<div id="add-a-citation-file-to-your-repository" class="callout-inner">
+<h3 class="callout-title">Add a citation file to your repository<a class="anchor" aria-label="anchor" href="#add-a-citation-file-to-your-repository"></a>
+</h3>
+<div class="callout-content">
+<p>Create a CITATION.cff file for your code and add it to your Github
+repository. Be sure to include the DOI you were allocated earlier
+on.</p>
+</div>
+</div>
+</div>
 <div id="going-further-with-publishing-code" class="callout">
 <div class="callout-square">
 <i class="callout-icon" data-feather="bell"></i>
@@ -1645,9 +1744,9 @@ improve how findable, accessible or reusable it is? One further step we
 could take is to publish the code with a peer reviewed journal. Some
 traditional journals will accept software submissions, although these
 are usually as a supplementary material for a paper. There also journals
-which specialise in research software such as the <a href="Journal%20of%20Open%20Research%20Software">https://openresearchsoftware.metajnl.com/</a>,
-<a href="The%20Jornal%20of%20Open%20Source%20Software">https://joss.theoj.org/</a>
-or <a href="SoftwareX">https://www.sciencedirect.com/journal/softwarex</a>.
+which specialise in research software such as the <a href="https://openresearchsoftware.metajnl.com/" class="external-link">Journal of Open
+Research Software</a>, <a href="https://joss.theoj.org/" class="external-link">The Jornal of
+Open Source Software</a> or <a href="https://www.sciencedirect.com/journal/softwarex" class="external-link">SoftwareX</a>.
 With these the submission will be the software itself and not a paper,
 although a short abstract or description of the software is often
 required.</p>
@@ -1661,8 +1760,8 @@ required.</p>
 <h1 id="working-with-collaborators">Working with collaborators<a class="anchor" aria-label="anchor" href="#working-with-collaborators"></a>
 </h1>
 <p>The strength of online collaboration tools such as Github doesn’t
-just lie in the ability to share code, but also in the ability to track
-problems with that code and for multiple developers to work on it
+just lie in the ability to share code. They also allow us to track
+problems with that code, for multiple developers to work on it
 independently and bring their changes together and to review those
 changes before they are accepted.</p>
 <div class="section level2">
@@ -1677,8 +1776,12 @@ help using documented features of the program).</p>
 <p>In the testing chapter earlier on we identified a bug in our code
 with missing values or date stamps failing (<strong><em>DOUBLE CHECK
 THIS IS REALLY THE PROBLEM</em></strong>). Let’s go ahead and create a
-new issue in our Github repository to describe this problem. A good
-issue description should include:</p>
+new issue in our Github repository to describe this problem. We can find
+the issue tracker on the “Issues” tab in the top left of the Github page
+for the repository. Click on this and then click on the green “New
+Issue” button on the right hand side of the screen. We can then enter a
+title and description of our issue.</p>
+<p>A good issue description should include:</p>
 <ul>
 <li>What the problem is, including any error messages that are
 displayed.</li>
@@ -1704,6 +1807,8 @@ following:</p>
 <li>Go to the Github webpage for your code</li>
 <li>Click on the Issues tab</li>
 <li>Click on the “New issue” button</li>
+<li>Enter a title and description for the issue</li>
+<li>Click the “Submit Issue” button to create the issue.</li>
 </ul>
 </div>
 </div>
@@ -1733,7 +1838,7 @@ making a commit which includes the word “fixes”, “fixed”, “close”,
 <p>Branching is a feature of Git that allows two or more parallel
 streams of work. Commits can be made to one branch without interferring
 with another. Branches are commonly used as a way for one developer to
-work on a new feature or a bug fix while ohter developers work on other
+work on a new feature or a bug fix while other developers work on other
 features. When those new features or bug fixes are complete the branch
 will be merged back with the main (sometimes called master) branch.</p>
 <div class="section level3">
@@ -1745,7 +1850,7 @@ is common practice when the bug we are fixing has a corresponding issue
 to name the branch after the issue number and name. For example we might
 call the branch <code>01-missing-values-bug</code> instead of something
 less descriptive like <code>bugfix</code>.</p>
-<p>or example running:</p>
+<p>For example, the command:</p>
 <div class="codewrapper sourceCode" id="cb2">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -1757,6 +1862,11 @@ one branch called <code>main</code> or perhaps <code>master</code> and
 our new <code>01-missing-values-bug</code> branch. by running
 <code>git branch</code> with no parameters. This will put <code>*</code>
 next to the currently active branch.</p>
+<div class="codewrapper sourceCode" id="cb3">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" tabindex="-1"></a><span class="fu">git</span> branch</span></code></pre>
+</div>
 <div class="codewrapper">
 <h3 class="code-label">OUTPUT<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
@@ -1767,18 +1877,18 @@ next to the currently active branch.</p>
 To switch branches we can either use the <code>git switch</code> or
 <code>git checkout</code> command followed by the branch name. For
 example:</p>
-<div class="codewrapper sourceCode" id="cb4">
+<div class="codewrapper sourceCode" id="cb5">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" tabindex="-1"></a><span class="fu">git</span> switch 01-missing-values-bug</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="fu">git</span> switch 01-missing-values-bug</span></code></pre>
 </div>
 <p>To create a branch and change to it in a single command we can use
 <code>git switch</code> with the <code>-c</code> option (or
 <code>git checkout</code> with the <code>-b</code> option).</p>
-<div class="codewrapper sourceCode" id="cb5">
+<div class="codewrapper sourceCode" id="cb6">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" tabindex="-1"></a><span class="fu">git</span> switch <span class="at">-c</span> 02-another-bug</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="fu">git</span> switch <span class="at">-c</span> 02-another-bug</span></code></pre>
 </div>
 </div>
 <div class="section level3">
@@ -1790,22 +1900,22 @@ we’ll see the name of the branch we’re committing to in the output of
 <code>git commit</code>. Let’s edit our code and fix the lack of default
 values bug that we entere into the issue tracker earlier on.</p>
 <p>Change your code from</p>
-<div class="codewrapper sourceCode" id="cb6">
-<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb6-1"><a href="#cb6-1" tabindex="-1"></a><span class="op">&lt;</span>call to pandas without checks identified <span class="kw">in</span> testing section<span class="op">&gt;</span></span></code></pre>
-</div>
-<p>to:</p>
 <div class="codewrapper sourceCode" id="cb7">
 <h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="op">&lt;</span>call to pandas <span class="cf">with</span> checks identified <span class="kw">in</span> testing section<span class="op">&gt;</span></span></code></pre>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb7-1"><a href="#cb7-1" tabindex="-1"></a><span class="op">&lt;</span>call to pandas without checks identified <span class="kw">in</span> testing section<span class="op">&gt;</span></span></code></pre>
+</div>
+<p>to:</p>
+<div class="codewrapper sourceCode" id="cb8">
+<h3 class="code-label">PYTHON<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode python" tabindex="0"><code class="sourceCode python"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="op">&lt;</span>call to pandas <span class="cf">with</span> checks identified <span class="kw">in</span> testing section<span class="op">&gt;</span></span></code></pre>
 </div>
 <p>and now commit it.</p>
-<div class="codewrapper sourceCode" id="cb8">
+<div class="codewrapper sourceCode" id="cb9">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"fixed bug"</span> eva_data_analysis.py</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" tabindex="-1"></a><span class="fu">git</span> commit <span class="at">-m</span> <span class="st">"fixed bug"</span> eva_data_analysis.py</span></code></pre>
 </div>
 <p>In the output of <code>git commit -m</code> the first part of the
 output line will show the name of the branch we just made the commit
@@ -1817,26 +1927,26 @@ to.</p>
 </div>
 <p>If we now switch back to the <code>main</code> branch our new commit
 will no longer be there in the source file.</p>
-<div class="codewrapper sourceCode" id="cb10">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" tabindex="-1"></a><span class="fu">git</span> switch main</span></code></pre>
-</div>
-<p>And if we go back to the <code>01-missing-values-bug</code> branch it
-will re-appear.</p>
 <div class="codewrapper sourceCode" id="cb11">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="fu">git</span> switch 01-missing-values-bug</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a><span class="fu">git</span> switch main</span></code></pre>
+</div>
+<p>And if we go back to the <code>01-missing-values-bug</code> branch it
+will re-appear.</p>
+<div class="codewrapper sourceCode" id="cb12">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="fu">git</span> switch 01-missing-values-bug</span></code></pre>
 </div>
 <p>If we want to push our changes to a remote such as Github we have to
 tell the <code>git push</code> command which branch to push to. If the
 branch doesn’t exist on the remote (as it currently won’t) then it will
 be created.</p>
-<div class="codewrapper sourceCode" id="cb12">
+<div class="codewrapper sourceCode" id="cb13">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" tabindex="-1"></a><span class="fu">git</span> push origin 01-missing-values-bug</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="fu">git</span> push origin 01-missing-values-bug</span></code></pre>
 </div>
 <p>If we now refresh the Github webpage for this repository we should
 see the bugfix branch has appeared in the list of branches.</p>
@@ -1844,10 +1954,10 @@ see the bugfix branch has appeared in the list of branches.</p>
 if we’ve made changes on another computer or via Github’s web based
 editor), then we can specify a branch on a <code>git pull</code>
 command.</p>
-<div class="codewrapper sourceCode" id="cb13">
+<div class="codewrapper sourceCode" id="cb14">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" tabindex="-1"></a><span class="fu">git</span> pull origin 01-missing-values-bug</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="fu">git</span> pull origin 01-missing-values-bug</span></code></pre>
 </div>
 </div>
 </div>
@@ -1859,17 +1969,17 @@ then we can merge our branch back into the main one (or any other
 branch). This is done with the <code>git merge</code> command.</p>
 <p>This must be run on the <em>TARGET</em> branch of the merge, so we’ll
 have to use a <code>git switch</code> command to set this.</p>
-<div class="codewrapper sourceCode" id="cb14">
-<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
-</h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" tabindex="-1"></a><span class="fu">git</span> switch main</span></code></pre>
-</div>
-<p>Now we’re back on the main branch we can go ahead and merge the
-changes from the bugfix branch:</p>
 <div class="codewrapper sourceCode" id="cb15">
 <h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
 </h3>
-<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="fu">git</span> merge 01-missing-values-bug</span></code></pre>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a><span class="fu">git</span> switch main</span></code></pre>
+</div>
+<p>Now we’re back on the main branch we can go ahead and merge the
+changes from the bugfix branch:</p>
+<div class="codewrapper sourceCode" id="cb16">
+<h3 class="code-label">BASH<i aria-hidden="true" data-feather="chevron-left"></i><i aria-hidden="true" data-feather="chevron-right"></i>
+</h3>
+<pre class="sourceCode bash" tabindex="0"><code class="sourceCode bash"><span id="cb16-1"><a href="#cb16-1" tabindex="-1"></a><span class="fu">git</span> merge 01-missing-values-bug</span></code></pre>
 </div>
 </div>
 <div class="section level2">
@@ -2129,8 +2239,8 @@ any links that you are not going to use.
   "url": "https://softwaresaved.github.io/fair-research-software/aio.html",
   "identifier": "https://softwaresaved.github.io/fair-research-software/aio.html",
   "dateCreated": "2023-10-03",
-  "dateModified": "2024-06-12",
-  "datePublished": "2024-06-12"
+  "dateModified": "2024-06-16",
+  "datePublished": "2024-06-16"
 }
 
   </script><script>
